@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+<title>XRPL Portable Terminal Hun Config</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>      
+</head>
+<body>
+<div class="container text-center">
+<img src="https://raw.githubusercontent.com/XRPL-Labs/xumm-api/master/public_html/assets/images/logo-xumm.svg"  alt="XUMM Logo" class="img-fluid" alt="XUMM Logo"  width=150" height="150">
+</div>
+<div class="jumbotron jumbotron-fluid ">
+<div class="container text-center">
+<h1>XRPL Portable Teminal Hub Config</h1> 
+<a href="/"  class="btn btn-primary border border-dark btn-sm text-white" role="button" >XRPL Hub »</a>
+</div>
+</div>
+
+         <div class="container text-center">
+	<div class="well form-group text-center">
+		<form action="/PostClientDetail" role="form" method="post" >
+		<h3 class="ml12">XUMM Config</h3>
+		<div class="row pb-4">
+    <div class="col-12 col-lg-8 offset-lg-2 pt-md-5 pb-md-5">
+      <div class="card shadow">
+        <div class="card-header bg-dark text-white py-2">
+          <b class="font-200 py-0 my-0">
+            <i class="fas fa-signature mr-1"></i>
+           Add Your Xumm Secret & Key to start generating QR & NFC Payloads.
+          </b>
+        </div>
+        <label for="Amount" >Xumm Key</label>
+        <input autofocus type="text" class="form-control form-control-lg-" id="key" class="key" name="key" placeholder="Xumm Key">								
+                 
+         <label for="Memo">Xumm Secret</label>							
+         <input autofocus type="text" class="form-control form-control-lg-" id="secret" class="secret" name="secret" placeholder="Xumm Secret">								
+   
+         <label for="Memo">XRPL Address</label>							
+         <input autofocus type="text" class="form-control form-control-lg-" id="address" class="address" name="address" placeholder="XRPL Address">								
+   
+        </div> 
+     </div>
+								 </div> 
+							  </div>
+							
+							  <button type="submit" class="btn btn-primary btn-s shadow">Add Credentials » »</button>
+							</form>
+		  </div>
+		 
+
+</body>
+
+</html>

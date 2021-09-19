@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+<title>XRPL Portable Terminal Hub</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>      
+</head>
+<style>
+	 
+.input-icon {
+  position: relative;
+}
+
+.input-icon > i {
+  position: absolute;
+  display: block;
+  transform: translate(0, -50%);
+  top: 50%;
+  pointer-events: none;
+  width: 25px;
+  text-align: center;
+	font-style: normal;
+}
+
+.input-icon > input {
+  padding-left: 25px;
+	padding-right: 0;
+}
+
+.input-icon-right > i {
+  right: 0;
+}
+
+.input-icon-right > input {
+  padding-left: 0;
+  padding-right: 25px;
+  text-align: right;
+}
+
+
+input[type="value"]::placeholder {  
+                  
+                /* Firefox, Chrome, Opera */ 
+                text-align: center; 
+            }
+</style>
+<body>
+<div class="container text-center">
+<img src="https://raw.githubusercontent.com/XRPL-Labs/xumm-api/master/public_html/assets/images/logo-xumm.svg"  alt="XUMM Logo" class="img-fluid" alt="XUMM Logo"  width=150" height="150">
+</div>
+<div class="jumbotron jumbotron-fluid">
+<div class="container text-center">
+<h1>XRPL Portable Terminal Hub</h1> 
+<p>A Portable Console for XRPL/XUMM.</p>
+<a href="/"  class="btn btn-primary border border-dark btn-sm text-white" role="button" >Xumm Hub »</a>
+</div>
+</div>
+
+<div class="container text-center">
+	<div class="well form-group text-center">
+		<form action="/PostPayload" method="post" >
+		<h3 class="ml12"> XUMM payment request</h3>
+		<div class="row pb-4">
+    <div class="col-12 col-lg-8 offset-lg-2 pt-md-5 pb-md-5">
+      <div class="card shadow">
+        <div class="card-header bg-dark text-white py-2">
+          <b class="font-200 py-0 my-0">
+            <i class="fas fa-signature mr-1"></i>
+           Generate QR and NFC Payload Payment 
+          </b>
+        </div>
+		<div class="well form-group ">
+								<!-- <label for="Amount" >Amount</label>
+								
+									<input autofocus type="text"  class="form-control form-control-lg-" id="amount" class="amount" name="amount" placeholder="Amount">		
+
+								</div> -->
+								<div class="btn-group-vertical ml-4 mt-4" role="group" aria-label="Basic example">
+									<div class="btn-group">
+										<div  class="input-icon form-group text-body">
+	
+											<input class="text-center form-control-lg mb-2" id="amount" name="amount" placeholder="0.00">  
+											 <i>
+												 <img src="https://raw.githubusercontent.com/xrpsymbol/xrpsymbol.github.io/master/xrp-symbol/symbol/xrp-symbol-white-32.png" class="input-icon" ></img>
+											 </i>
+											</div>
+
+									</div>
+									<div class="btn-group">
+										<button type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementById('amount').value=document.getElementById('amount').value + '1';">1</button>
+										<button type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementById('amount').value=document.getElementById('amount').value + '2';">2</button>
+										<button type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementById('amount').value=document.getElementById('amount').value + '3';">3</button>
+									</div>
+									<div class="btn-group">
+										<button type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementById('amount').value=document.getElementById('amount').value + '4';">4</button>
+										<button type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementById('amount').value=document.getElementById('amount').value + '5';">5</button>
+										<button type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementById('amount').value=document.getElementById('amount').value + '6';">6</button>
+									</div>
+									<div class="btn-group">
+										<button type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementById('amount').value=document.getElementById('amount').value + '7';">7</button>
+										<button type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementById('amount').value=document.getElementById('amount').value + '8';">8</button>
+										<button type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementById('amount').value=document.getElementById('amount').value + '9';">9</button>
+									</div>
+									<div class="btn-group">
+										<button type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementById('amount').value=document.getElementById('amount').value.slice(0, -1);">&lt;</button>
+										<button type="button" class="btn btn-outline-secondary py-3" onclick="document.getElementById('amount').value=document.getElementById('amount').value + '0';">0</button>
+										<button type="submit" class="btn btn-primary py-3" >Go</button>
+									</div>
+								</div>
+								 </div> 
+							  </div>
+							</div>
+							  <button type="submit" class="btn btn-primary btn-s shadow">Generate QR & NFC Request »</button>
+							</form>
+		  </div>
+		  </div>
+
+</body>
+
+</html>

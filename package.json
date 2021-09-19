@@ -1,0 +1,29 @@
+{
+  "name": "xumm_pos_termnial_hub",
+  "version": "1.0.0",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "ejs": "~2.6.1",
+    "express": "^4.16.4",
+    "express-favicon": "^2.0.1",
+    "express-session": "^1.17.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "request": "^2.88.2",
+    "socket.io-client": "^4.0.1",
+    "websocket": "^1.0.33"
+  },
+  "devDependencies": {
+    "socket.io": "^1.7.4"
+  }
+}
