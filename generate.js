@@ -8,8 +8,8 @@ dotenv.config();
 var apisecret = process.env.apisecret; 
 var Host = process.env.HOSTNAME; */
 
-var apikey= "935c604a-3309-4700-97c0-93fab7c2478f"
-var apisecret= "1511bd5b-304a-492f-ae60-b276e43768b8"
+var apikey= ""
+var apisecret= ""
 
 var A = "\\x90\\x00";
 var B = "\\x6a\\x00";
