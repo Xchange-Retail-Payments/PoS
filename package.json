@@ -24,6 +24,6 @@
     "websocket": "^1.0.33"
   },
   "devDependencies": {
-    "socket.io": "^1.7.4"
+    "socket.io": "^2.4.0"
   }
 }
